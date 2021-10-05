@@ -178,7 +178,7 @@ print(res.fetchdf())
 print(res.df())
 
 # this also works directly on data frames
-res = duckdb.query(test_df, 'my_name_for_test_df', 'SELECT * FROM my_name_for_test_df')
+res = duckdb.query_df(test_df, 'my_name_for_test_df', 'SELECT * FROM my_name_for_test_df')
 print(res.df())
 
 
